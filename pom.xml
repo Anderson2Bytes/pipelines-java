@@ -16,7 +16,33 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+	
+  <repositories>
+    <repository>
+      <id>anderson0909</id>
+      <url>https://pkgs.dev.azure.com/anderson0909/_packaging/anderson0909/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 
+  <distributionManagement>
+    <repository>
+      <id>anderson0909</id>
+      <url>https://pkgs.dev.azure.com/anderson0909/_packaging/anderson0909/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </distributionManagement>
+  
   <build>
     <finalName>helloworld</finalName>
     <plugins>
